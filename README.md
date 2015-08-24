@@ -6,6 +6,8 @@ The app allows you to view the best 9gag posts created in the past day, without 
 
 Master branch is well-tested on my own server, but heroku version isn't, because I don't wont to give Heroku access to my credit card. Without verified account Heroku doesn't allows you to run more than one process on app startup, so app works only until the first server restart. And they restart their servers at least one time per day.
 
+[Demo](https://bestoftodays9gag.herokuapp.com/) (May not refresh posts)
+
 Quickstart
 ----------
 
@@ -46,6 +48,7 @@ Master branch will not work on Heroku. Use heroku-version branch for it. As i wr
 Theoretically, to run this app on Heroku you must:
 
 Push app to heroku master
+
 Run
 ```
 heroku scale clock=1
