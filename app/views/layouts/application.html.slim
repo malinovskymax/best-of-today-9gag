@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title BestOfToday9gag
+    = stylesheet_link_tag 'manifest', media: 'all'
+    = javascript_include_tag 'manifest'
+    = csrf_meta_tags
+  body
+    /header
+    nav.navbar.navbar-default
+      div.container-fluid
+        div.navbar-header
+          a.navbar-brand href=root_path Best of today's 9gag"
+    = yield
+    /footer
+    footer.footer
+      div.container.text-center
+        a href="mailto:malinovsky.dev@gmail.com"
+          p.text-muted Max Malinovsky

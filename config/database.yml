@@ -1,0 +1,23 @@
+default: &default
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: best-of-today-9gag_development
+  username: rails_user
+  password: password
+
+test:
+  <<: *default
+  database: best-of-today-9gag_test
+  username: rails_user
+  password: password
+
+production:
+  <<: *default
+  database: best-of-today-9gag_production
+  username: rails_user
+  password: password #<%= ENV['BEST-OF-TODAY-9GAG_DATABASE_PASSWORD'] %>
