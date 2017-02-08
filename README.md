@@ -1,6 +1,6 @@
 ## README
 
-Used Ruby 2.2.0, Rails 4.2.0, Bootstrap 3
+Used Ruby 2.2.0, Rails 4.2.0, Bootstrap 3 (works perfectly on Raspberry Pi 3 model B)
 
 The app allows you to view the best 9gag posts created in the past day, without having to manually scrolling the 9gag's homepage viewing tons of anime, cosplay, pokemons, and other not so interesting content. Usually posts with more than 10 000 upvotes are really good, so app checks 9gag for these posts every minute, saves they to database. Also every minute app delete from DB posts that been added more than 1 day ago.
 
