@@ -15,7 +15,7 @@ Use master branch for server with free access to cron jobs:
 
 cd to project's directory and run
 ```
-whenewer -w
+whenever -w
 ```
 
 Than check your crontab by running
