@@ -1,4 +1,4 @@
-every 1.minute do
+every 5.minutes do
   runner 'Post.delete_old'
   runner 'Post.get_new'
 end
