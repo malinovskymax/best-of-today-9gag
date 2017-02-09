@@ -16,7 +16,7 @@ class Post < ActiveRecord::Base
     page.css('article.badge-entry-container').each do |post|
       rating = post.css('span.badge-item-love-count').first.content.gsub(/,/, '').to_i
       link = post.css('a').first
-      if rating > 5_000 && !existed_posts.include?(link['href'])
+      if rating > 7_000 && !existed_posts.include?(link['href'])
         new_posts << { link: link['href'], rating: rating }
       end
     end
