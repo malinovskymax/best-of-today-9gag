@@ -1,7 +1,10 @@
-table
+table.align-top
   - for post in @posts
     tr
       td
-        a href="http://9gag.com#{post.link}" ="http://9gag.com#{post.link}"
-      td
         |Rating: #{post.rating}
+        br
+        a href="http://9gag.com#{post.post_link}"
+          img src="#{post.preview_link}"
+        br
+        br
